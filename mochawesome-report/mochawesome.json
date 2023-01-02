@@ -1,0 +1,242 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 4,
+    "passes": 2,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-01-02T20:47:15.422Z",
+    "end": "2023-01-02T20:47:19.957Z",
+    "duration": 4535,
+    "testsRegistered": 4,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "95dc5028-5bf8-44b8-843c-0e9984f5f8cc",
+      "title": "",
+      "fullFile": "/Users/laura.piedrahita/Desktop/JavaScript-API-Automation-Tests/test/posts.js",
+      "file": "/test/posts.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a2fb5aa7-125f-48df-8ad3-e25b7e77f638",
+          "title": "Posts",
+          "fullFile": "/Users/laura.piedrahita/Desktop/JavaScript-API-Automation-Tests/test/posts.js",
+          "file": "/test/posts.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Posts\"",
+              "fullTitle": "Posts \"before all\" hook in \"Posts\"",
+              "timedOut": false,
+              "duration": 1262,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var self = this,\n  args = arguments;\nreturn new Promise(function (resolve, reject) {\n  var gen = fn.apply(self, args);\n  function _next(value) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n  }\n  function _throw(err) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n  }\n  _next(undefined);\n});",
+              "err": {},
+              "uuid": "7a74be1b-c87e-4c00-9a26-e45c2870de9f",
+              "parentUUID": "a2fb5aa7-125f-48df-8ad3-e25b7e77f638",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Posts\"",
+              "fullTitle": "Posts \"after all\" hook in \"Posts\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// clean up\n// delete a user",
+              "err": {},
+              "uuid": "c0000861-66f0-443e-af8e-332d98859439",
+              "parentUUID": "a2fb5aa7-125f-48df-8ad3-e25b7e77f638",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "1911263a-f56e-476a-b331-ac8a26e65728",
+              "title": "POST",
+              "fullFile": "/Users/laura.piedrahita/Desktop/JavaScript-API-Automation-Tests/test/posts.js",
+              "file": "/test/posts.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "/posts",
+                  "fullTitle": "Posts POST /posts",
+                  "timedOut": false,
+                  "duration": 1120,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "var self = this,\n  args = arguments;\nreturn new Promise(function (resolve, reject) {\n  var gen = fn.apply(self, args);\n  function _next(value) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n  }\n  function _throw(err) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n  }\n  _next(undefined);\n});",
+                  "err": {
+                    "message": "AssertionError: expected [ { field: 'body', …(1) } ] to deep include { user_id: 27311, …(2) }",
+                    "estack": "AssertionError: expected [ { field: 'body', …(1) } ] to deep include { user_id: 27311, …(2) }\n    at _callee2$ (test/posts.js:40:37)\n    at tryCatch (test/posts.js:2:1)\n    at Generator.<anonymous> (test/posts.js:2:1)\n    at Generator.next (test/posts.js:2:1)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:9)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+                    "diff": null
+                  },
+                  "uuid": "39279a8a-bcc1-4679-b87d-749aad3b6fee",
+                  "parentUUID": "1911263a-f56e-476a-b331-ac8a26e65728",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "posts/:id",
+                  "fullTitle": "Posts POST posts/:id",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "var self = this,\n  args = arguments;\nreturn new Promise(function (resolve, reject) {\n  var gen = fn.apply(self, args);\n  function _next(value) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n  }\n  function _throw(err) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n  }\n  _next(undefined);\n});",
+                  "err": {
+                    "message": "Error: postId is invalid - undefined",
+                    "estack": "Error: postId is invalid - undefined\n    at _callee3$ (test/posts.js:52:15)\n    at tryCatch (test/posts.js:2:1)\n    at Generator.<anonymous> (test/posts.js:2:1)\n    at Generator.next (test/posts.js:2:1)\n    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:9)\n    at /Users/laura.piedrahita/Desktop/JavaScript-API-Automation-Tests/node_modules/@babel/runtime/helpers/asyncToGenerator.js:27:7\n    at new Promise (<anonymous>)\n    at Context.<anonymous> (node_modules/@babel/runtime/helpers/asyncToGenerator.js:19:12)\n    at processImmediate (node:internal/timers:466:21)",
+                    "diff": null
+                  },
+                  "uuid": "1d2f3619-735b-49d9-9297-0211fb0aa088",
+                  "parentUUID": "1911263a-f56e-476a-b331-ac8a26e65728",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "39279a8a-bcc1-4679-b87d-749aad3b6fee",
+                "1d2f3619-735b-49d9-9297-0211fb0aa088"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 1120,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 5000
+            },
+            {
+              "uuid": "97a337bc-c6bb-4657-b784-1dd4bdd6358f",
+              "title": "Negative Tests",
+              "fullFile": "/Users/laura.piedrahita/Desktop/JavaScript-API-Automation-Tests/test/posts.js",
+              "file": "/test/posts.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "422 Data validation failed",
+                  "fullTitle": "Posts Negative Tests 422 Data validation failed",
+                  "timedOut": false,
+                  "duration": 1092,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "var self = this,\n  args = arguments;\nreturn new Promise(function (resolve, reject) {\n  var gen = fn.apply(self, args);\n  function _next(value) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n  }\n  function _throw(err) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n  }\n  _next(undefined);\n});",
+                  "err": {},
+                  "uuid": "7896a8e9-8b93-4ddc-b563-2e0bb50a55b4",
+                  "parentUUID": "97a337bc-c6bb-4657-b784-1dd4bdd6358f",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "401 Authentication failed",
+                  "fullTitle": "Posts Negative Tests 401 Authentication failed",
+                  "timedOut": false,
+                  "duration": 1041,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "var self = this,\n  args = arguments;\nreturn new Promise(function (resolve, reject) {\n  var gen = fn.apply(self, args);\n  function _next(value) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n  }\n  function _throw(err) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n  }\n  _next(undefined);\n});",
+                  "err": {},
+                  "uuid": "7f86d808-c6d0-4463-be51-5966e4a6f59f",
+                  "parentUUID": "97a337bc-c6bb-4657-b784-1dd4bdd6358f",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "7896a8e9-8b93-4ddc-b563-2e0bb50a55b4",
+                "7f86d808-c6d0-4463-be51-5966e4a6f59f"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 2133,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 5000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 5000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 5000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
